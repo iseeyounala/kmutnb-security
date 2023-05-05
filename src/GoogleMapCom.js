@@ -20,7 +20,7 @@ function GoogleMapCom({ tasks }) {
 
   const getDataLocationCar = () => {
     axios
-      .post("http://192.168.1.5:3001/web/user/getLocationCar", {}) // เปลี่ยน IP เป็น Local IP ห้ามใช้ Localhost
+      .post("http://172.20.10.4:3001/web/user/getLocationCar", {}) // เปลี่ยน IP เป็น Local IP ห้ามใช้ Localhost
       .then((res) => {
         let { status, result } = res.data;
         console.log(res.data);
